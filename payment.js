@@ -18,7 +18,7 @@ function getPaymentLink() {
  * @param {string} productName
  * @returns {string} رابط الدفع
  */
-async function createCheckoutSession(customerPhone, amountUSD = 49, productName = "المنتج الرقمي") {
+async function createCheckoutSession(customerPhone, amountUSD = 17, productName = "المنتج الرقمي") {
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
